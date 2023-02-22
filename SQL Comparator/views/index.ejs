@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        body {
+            background-color: lightblue;
+            color: darkblue;
+            font-family:verdana; 
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        textarea {
+            width: 500px;
+            height: 80px;
+        }
+
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+
+</script>
+</head>
+
+
+<body>
+    <form method="POST" action="/porovnatDotazy" id="novaTabulka-form">
+
+        <h2>Porovnat dotazy</h2>
+
+        <p>
+            <textarea type="text" name="queryLeft" id="textAreaLeft"></textarea>
+        </p>   
+        <p>
+            <textarea type="text" name="queryRight" id="textAreaRight"></textarea>
+        </p>
+        <p>
+            <label>Odsazovat řádky</label>
+            <input type="checkbox" name="odsazovatRadky">
+        </p> 
+
+        <footer>
+            <br><br>
+            <input type="submit" value="Potvrď">
+        </footer>
+        
+    </form> 
+</body>
+
+
+
+</html>
